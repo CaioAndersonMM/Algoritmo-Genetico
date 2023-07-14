@@ -64,4 +64,29 @@ Aplicaremos	cruzamento	de	ponto	único entre	as	duas	primeiras	soluções fornec
 usuário,	cruzamento	aritmético entre	a	terceira	e	quarta	solução,	mutação	simples sobre	a	
 quinta	solução	e,	finalmente,	mutação	dupla sobre	a	sexta	e	última	solução.	Isso	significa	que	
 após	aplicação	dos	operadores	genéticos	teremos	mais	4	soluções	novas	para	avaliar.	A	
-aplicação	dos	operadores	em	cima	do	exemplo	inicial	resultaria	nos	seguintes	números
+aplicação	dos	operadores	em	cima	do	exemplo	inicial	resultaria	nos	seguintes	números:
+      A B C D E F G H I J K L M N O P
+60504 1 1 1 0 1 1 0 0 0 1 0 1 1 0 0 0
+25000 0 1 1 0 0 0 0 1 1 0 1 0 1 0 0 0
+12329 0 0 1 1 0 0 0 0 0 0 1 0 1 0 0 1
+38054 1 0 0 1 0 1 0 0 1 0 1 0 0 1 1 0
+1259  0 0 0 0 0 1 0 0 1 1 1 0 1 0 1 1
+732   0 0 0 0 0 0 1 0 1 1 0 1 1 1 0 0
+60584 1 1 1 0 1 1 0 0 1 0 1 0 1 0 0 0
+4128  0 0 0 1 0 0 0 0 0 0 1 0 0 0 0 0
+1771  0 0 0 0 0 1 1 0 1 1 1 0 1 0 1 1
+4820  0 0 0 1 0 0 1 0 1 1 0 1 0 1 0 0
+
+Resultado da Avaliação
+-----------------------
+60504 – $69 – 40Kg – X
+25000 – $45 – 22Kg – X
+12329 – $60 – 17Kg – OK
+38054 – $46 – 29Kg – X
+1259 – $61 – 18Kg – OK
+ 732 – $41 – 18Kg – OK
+-----------------------
+60584 – $66 – 41Kg – X
+4128 – $30 – 6Kg – OK
+1771 – $62 – 20Kg – OK
+4820 – $41 – 17Kg – O
