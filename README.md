@@ -35,7 +35,15 @@ Exemplo de solução:
 
 O primeiro bit igual a 1 significa que o objeto A está na mochila, o segundo bit igual a 0 significa que o objeto B não está na mochila, e assim por diante. Nem todas as sequências representadas dessa forma são possíveis, muitas vão extrapolar o peso máximo da mochila ou não representarão a melhor solução.
 
-Operadores Genéticos
+*Estamos interessados em encontrar a sequência de bits que nos dê uma solução ótima para o problema. A técnica de algoritmos genéticos faz isso através de tentativas. Ela parte de um conjunto inicial de soluções que são fornecidas pelo usuário. No nosso caso de exemplificação, as soluções 6 soluções iniciais serão os números (entre  0 e 65535) fornecidos pelo usuário:
+- 60504
+- 25000
+- 12329
+- 38054
+- 1259
+- 732
+
+## Operadores Genéticos
 Estamos interessados em encontrar a sequência de bits que nos dê uma solução ótima para o problema. A técnica de algoritmos genéticos faz isso através de tentativas. Ela parte de um conjunto inicial de soluções que são fornecidas pelo usuário. A partir daí, aplicaremos alguns operadores genéticos sobre as soluções iniciais para obter novas soluções.
 
 ## Cruzamento
@@ -85,18 +93,18 @@ b) Dupla
 
 ## Ficamos então com essas soluções - (mais	4	soluções	novas	para	avaliar):
 
-|      | A | B | C | D | E | F | G | H | I | J | K | L | M | N | O | P |
-|------|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Solução 3  | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 | 1 | 0 | 1 | 1 | 0 | 0 |
-| Solução 4  | 0 | 1 | 1 | 0 | 0 | 0 | 0 | 1 | 1 | 0 | 1 | 0 | 1 | 0 | 0 |
-| Solução 5  | 0 | 0 | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 0 | 1 | 0 | 0 | 1 |
-| Solução 6  | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 | 1 | 1 | 0 |
-| Solução 7  | 0 | 0 | 0 | 0 | 0 | 1 | 0 | 0 | 1 | 1 | 1 | 0 | 1 | 0 | 1 | 1 |
-| Solução 8  | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 0 | 1 | 1 | 0 | 1 | 1 | 1 | 0 | 0 |
-| Nova Solução 3 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 1 | 0 | 0 | 0 |
-| Nova Solução 4 | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 0 |
-| Nova Solução 5 | 0 | 0 | 0 | 0 | 0 | 1 | 1 | 0 | 1 | 1 | 1 | 0 | 1 | 0 | 1 | 1 |
-| Nova Solução 6 | 0 | 0 | 0 | 1 | 0 | 0 | 1 | 0 | 1 | 1 | 0 | 1 | 0 | 1 | 0 | 0 |
+|     | A | B | C | D | E | F | G | H | I | J | K | L | M | N | O | P |
+| --- | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - |
+| 60504 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| 25000 | 0 | 1 | 1 | 0 | 0 | 0 | 0 | 1 | 1 | 0 | 1 | 0 | 1 | 0 | 0 | 0 |
+| 12329 | 0 | 0 | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 0 | 1 | 0 | 0 | 1 |
+| 38054 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 | 1 | 1 | 0 |
+| 1259  | 0 | 0 | 0 | 0 | 0 | 1 | 0 | 0 | 1 | 1 | 1 | 0 | 1 | 0 | 1 | 1 |
+| 732   | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 0 | 1 | 1 | 0 | 1 | 1 | 1 | 0 | 0 |
+| 60584 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 1 | 0 | 0 | 0 |
+| 4128  | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 0 |
+| 1771  | 0 | 0 | 0 | 0 | 0 | 1 | 1 | 0 | 1 | 1 | 1 | 0 | 1 | 0 | 1 | 1 |
+| 4820  | 0 | 0 | 0 | 1 | 0 | 0 | 1 | 0 | 1 | 1 | 0 | 1 | 0 | 1 | 0 | 0 |
 
 ## Resultado da Avaliação
 Após a aplicação dos operadores genéticos, a avaliação será baseada no valor total dos objetos selecionados e no peso total da mochila. As soluções que ultrapassarem a capacidade de peso da mochila serão marcadas como "X", enquanto aquelas que estiverem dentro da capacidade serão marcadas como "OK".
